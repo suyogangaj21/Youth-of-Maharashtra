@@ -1,17 +1,29 @@
-import { Outlet } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import FooterC from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
+import JoinUs from "./pages/joinus";
+import MemberLogin from "./pages/MemberLogin";
+import OrgLogin from "./pages/OrgLogin";
+import Home from "./pages/Home";
 
 
-
-function App() {
+const App = () => {
   return (
-     <div>
-       <Navbar/>
-       <Outlet/>
-       <FooterC/>
-     </div>
-  )
-}
+    <>
+    
+      <Routes>
+        <Route path="/" Component={Home} />
+        <Route path="/joinus" Component={JoinUs} />
+            
+        
+        <Route path="/FootPrints" />
+        <Route path="/Resources" />
+        <Route path="/Events" />
+        <Route path="/ContextUs" />
+        <Route path="/MemberLogin" Component={MemberLogin}/>
+        <Route path="/OrgLogin" Component={OrgLogin}/>
+      </Routes>
+      
+    </>
+  );
+};
 
 export default App;
