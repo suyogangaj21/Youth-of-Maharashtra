@@ -127,29 +127,29 @@ const Footer = styled.footer`
 `;
 
 const Home: React.FC = () => {
-  const carouselMedia = [
-    { type: 'image', src: '/assets/images/carousel1.jpg', alt: 'Image 1', description: 'Description 1' },
-    { type: 'image', src: '/assets/images/carousel2.jpg', alt: 'Image 2', description: 'Description 2' },
-    { type: 'image', src: '/assets/images/carousel3.jpg', alt: 'Image 3', description: 'Description 3' },
-    { type: 'image', src: '/assets/images/carousel1.jpg', alt: 'Image 1', description: 'Description 1' },
-    { type: 'image', src: '/assets/images/carousel2.jpg', alt: 'Image 2', description: 'Description 2' },
-    { type: 'image', src: '/assets/images/carousel3.jpg', alt: 'Image 3', description: 'Description 3' },
-    { type: 'image', src: '/assets/images/carousel1.jpg', alt: 'Image 1', description: 'Description 1' },
-    { type: 'image', src: '/assets/images/carousel2.jpg', alt: 'Image 2', description: 'Description 2' },
-    { type: 'image', src: '/assets/images/carousel3.jpg', alt: 'Image 3', description: 'Description 3' },
-  ];
+  // const carouselMedia = [
+  //   { type: 'image', src: '/assets/images/carousel1.jpg', alt: 'Image 1', description: 'Description 1' },
+  //   { type: 'image', src: '/assets/images/carousel2.jpg', alt: 'Image 2', description: 'Description 2' },
+  //   { type: 'image', src: '/assets/images/carousel3.jpg', alt: 'Image 3', description: 'Description 3' },
+  //   { type: 'image', src: '/assets/images/carousel1.jpg', alt: 'Image 1', description: 'Description 1' },
+  //   { type: 'image', src: '/assets/images/carousel2.jpg', alt: 'Image 2', description: 'Description 2' },
+  //   { type: 'image', src: '/assets/images/carousel3.jpg', alt: 'Image 3', description: 'Description 3' },
+  //   { type: 'image', src: '/assets/images/carousel1.jpg', alt: 'Image 1', description: 'Description 1' },
+  //   { type: 'image', src: '/assets/images/carousel2.jpg', alt: 'Image 2', description: 'Description 2' },
+  //   { type: 'image', src: '/assets/images/carousel3.jpg', alt: 'Image 3', description: 'Description 3' },
+  // ];
 
-  const carouselVideos = [
-    { src: '/assets/videos/v1.mp4', title: 'Video 1', description: 'Video Description 1' },
-    { src: '/assets/videos/v2.mp4', title: 'Video 2', description: 'Video Description 2' },
-    { src: '/assets/videos/v3.mp4', title: 'Video 3', description: 'Video Description 3' },
-    { src: '/assets/videos/v1.mp4', title: 'Video 1', description: 'Video Description 1' },
-    { src: '/assets/videos/v2.mp4', title: 'Video 2', description: 'Video Description 2' },
-    { src: '/assets/videos/v3.mp4', title: 'Video 3', description: 'Video Description 3' },
-    { src: '/assets/videos/v1.mp4', title: 'Video 1', description: 'Video Description 1' },
-    { src: '/assets/videos/v2.mp4', title: 'Video 2', description: 'Video Description 2' },
-    { src: '/assets/videos/v3.mp4', title: 'Video 3', description: 'Video Description 3' },
-  ];
+  // const carouselVideos = [
+  //   { src: '/assets/videos/v1.mp4', title: 'Video 1', description: 'Video Description 1' },
+  //   { src: '/assets/videos/v2.mp4', title: 'Video 2', description: 'Video Description 2' },
+  //   { src: '/assets/videos/v3.mp4', title: 'Video 3', description: 'Video Description 3' },
+  //   { src: '/assets/videos/v1.mp4', title: 'Video 1', description: 'Video Description 1' },
+  //   { src: '/assets/videos/v2.mp4', title: 'Video 2', description: 'Video Description 2' },
+  //   { src: '/assets/videos/v3.mp4', title: 'Video 3', description: 'Video Description 3' },
+  //   { src: '/assets/videos/v1.mp4', title: 'Video 1', description: 'Video Description 1' },
+  //   { src: '/assets/videos/v2.mp4', title: 'Video 2', description: 'Video Description 2' },
+  //   { src: '/assets/videos/v3.mp4', title: 'Video 3', description: 'Video Description 3' },
+  // ];
 
   const handleJoinUsClick = () => {
     window.location.href = '/join-us';
