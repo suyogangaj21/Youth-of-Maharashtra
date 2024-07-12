@@ -1,6 +1,6 @@
 import Joinin from "@/components/Joinin";
 import { Button } from "@/components/ui/button";
-import { Navigate } from "react-router-dom";
+
 
 const JoinUs = () => {
 
