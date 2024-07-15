@@ -4,6 +4,7 @@ import MemberLogin from "./pages/MemberLogin";
 import OrgLogin from "./pages/OrgLogin";
 import Home from "./pages/Home";
 import ContactUs from "./pages/ContactUs";
+import Resources from "./pages/Resources";
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
         <Route path="/join-us" Component={JoinUs}></Route>
 
         <Route path="/FootPrints"></Route>
-        <Route path="/Resources"></Route>
+        <Route path="/Resources" Component={Resources}></Route>
         <Route path="/Events"></Route>
         <Route path="/ContactUs" Component={ContactUs}></Route>
         <Route path="/MemberLogin" Component={MemberLogin}></Route>

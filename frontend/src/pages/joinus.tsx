@@ -7,7 +7,7 @@ const JoinUs = () => {
  
   return (
     <div className="flex flex-col relative h-[1000px]">
-      <div className="bg-[#E9F5ED] w-full h-[500px] flex justify-start p-3 flex-col items-center ">
+      <div className="bg-[#E9F5ED] w-full h-[500px] flex justify-start p-3 flex-col items-center relative">
         <img
           src="/images/JoinUs (1).png"
           alt="Join Us"
@@ -22,6 +22,8 @@ const JoinUs = () => {
           a Corporate Member. Please join our organization with a membership
           today. This fees will be utilized for different social activities.
         </h4>
+        <img src="/images/Group 111.png" alt="image" className="absolute left-3 w-[80px] md:w-[100px]"/>
+        <img src="/images/Group 113.png" alt="image" className="absolute right-0 top-0  "/>
       </div>
       <div className=" flex justify-evenly  w-full relative bottom-[40px]">
         <div className=" w-[320px] flex justify-center items-center bg-white px-2 py-8 m-4 shadow-2xl rounded-2xl">

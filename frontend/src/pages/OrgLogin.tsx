@@ -15,7 +15,7 @@ import { Textarea } from "@/components/ui/textarea";
 const formSchema = z.object({
   Orgname: z.string().min(2).max(50),
   contactname: z.string().min(2),
-  contactmobileno: z
+  contactmobileno: z.coerce
     .number()
     .gte(1000000000, { message: "Must contain atleast 10 digits" })
     .lte(9999999999, { message: "should not contain More than 10 digits" }),
@@ -53,12 +53,14 @@ const OrgLogin = () => {
   return (
     <div className="flex justify-evenly items-center w-full ">
       <img
-        src="./images/OrganizationLogin (1).png "
+        src="./images/Organization.svg "
         alt="Images"
         className="hidden md:flex w-1/2 m-5 "
       />
       <div className="max-w-[500px] shadow-2xl w-full mt-10 rounded-lg mb-10">
-        <h2 className="text-4xl p-5 font-bold ">Become a Member</h2>
+        <h2 className="text-4xl p-5 font-bold ">
+          Registration for Organizaztion
+        </h2>
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
@@ -69,7 +71,9 @@ const OrgLogin = () => {
               name="Orgname"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-xl ">Name of NGO</FormLabel>
+                  <FormLabel className="text-xl ">
+                    Name of Organization
+                  </FormLabel>
                   <FormControl>
                     <Input placeholder="Enter Name of NGO" {...field} />
                   </FormControl>
@@ -83,7 +87,7 @@ const OrgLogin = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className="text-xl ">
-                    Date of Registration (YYYY-MM-DD)
+                    Registration Date of Organizzation (YYYY-MM-DD)
                   </FormLabel>
                   <FormControl>
                     <Input
@@ -129,10 +133,7 @@ const OrgLogin = () => {
                 <FormItem>
                   <FormLabel className="text-xl ">Contact Person</FormLabel>
                   <FormControl>
-                    <Input
-                      placeholder="Enter Contact Person Name"
-                      {...field}
-                    />
+                    <Input placeholder="Enter Contact Person Name" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -159,11 +160,12 @@ const OrgLogin = () => {
               name="areaofwork"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-xl ">
-                    Area of Work
-                  </FormLabel>
+                  <FormLabel className="text-xl ">Area of Work</FormLabel>
                   <FormControl>
-                    <Textarea placeholder="Enter were Activities in which NGO participate" {...field} />
+                    <Textarea
+                      placeholder="Enter were Activities in which NGO participate"
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -178,7 +180,10 @@ const OrgLogin = () => {
                     Brife Note about Organisation
                   </FormLabel>
                   <FormControl>
-                    <Textarea placeholder="Write a beife note about the NGO in 50 to 300 Words.)" {...field}  />
+                    <Textarea
+                      placeholder="Write a beife note about the NGO in 50 to 300 Words.)"
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

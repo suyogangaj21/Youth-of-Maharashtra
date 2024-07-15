@@ -23,7 +23,6 @@ const NavbarContainer = styled.nav`
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.5);
-
 `;
 
 const LogoContainer = styled.div`
@@ -140,7 +139,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <NavbarContainer className="sticky" >
+    <NavbarContainer className="sticky">
       <LogoContainer>
         <LogoImage src="/images/logo.webp" alt="Logo" />
       </LogoContainer>
@@ -168,7 +167,9 @@ const Navbar: React.FC = () => {
           }
         )}
         <NavItem>
-          <ContactButton>Contact Us</ContactButton>
+          <ContactButton>
+            <a href="/ContactUs">Contact Us</a>
+          </ContactButton>
         </NavItem>
       </NavMenu>
     </NavbarContainer>
