@@ -55,7 +55,7 @@ const NavMenu = styled.ul<NavMenuProps>`
     left: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
+     
     flex-direction: column;
     align-items: center;
   }
