@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import styled from "styled-components";
 
 export type HeaderType = {
@@ -168,7 +168,6 @@ const RectangleParent = styled.div`
   }
   @media screen and (max-width: 1100px) {
     flex-wrap: wrap;
-    
   }
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -191,7 +190,7 @@ const HeaderRoot = styled.header`
   max-width: 100%;
   text-align: center;
   font-family: Inter;
-  background-color: #E9F5ED;
+  background-color: #e9f5ed;
 `;
 
 const Header: FunctionComponent<HeaderType> = ({ className = "" }) => {
@@ -212,7 +211,7 @@ const Header: FunctionComponent<HeaderType> = ({ className = "" }) => {
             <IfYouWantToJoinForSuchB1>
               <IfYouWantToJoinForSuchB>
                 <IfYouWant>
-                  If you want to participate in below event you can 
+                  If you want to participate in below event you can
                 </IfYouWant>
                 <Span>{` `}</Span>
               </IfYouWantToJoinForSuchB>

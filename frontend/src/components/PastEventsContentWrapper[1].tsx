@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState } from "react";
+import { FunctionComponent, useState } from "react";
 import styled from "styled-components";
 import Cards from "../assets/images/cards.webp";
 
@@ -155,7 +155,11 @@ const PastEventFrame = styled.div<{ bgImage: string }>`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7)
+    );
     border-radius: 30px;
     z-index: 0;
   }
@@ -246,42 +250,42 @@ const PastEventsContentWrapper: FunctionComponent<PastEventsProps> = ({
       date: "2023-05-01",
       description: "Description of Event 1.",
       imageUrl: Cards, // Replace with actual image URL
-      link: "/event1-details" // Replace with actual link URL
+      link: "/event1-details", // Replace with actual link URL
     },
     {
       title: "Event 2",
       date: "2023-06-15",
       description: "Description of Event 2.",
       imageUrl: Cards, // Replace with actual image URL
-      link: "/event2-details" // Replace with actual link URL
+      link: "/event2-details", // Replace with actual link URL
     },
     {
       title: "Event 3",
       date: "2023-07-20",
       description: "Description of Event 3.",
       imageUrl: Cards, // Replace with actual image URL
-      link: "/event3-details" // Replace with actual link URL
+      link: "/event3-details", // Replace with actual link URL
     },
     {
       title: "Event 4",
       date: "2023-08-10",
       description: "Description of Event 4.",
       imageUrl: Cards, // Replace with actual image URL
-      link: "/event4-details" // Replace with actual link URL
+      link: "/event4-details", // Replace with actual link URL
     },
     {
       title: "Event 5",
       date: "2023-09-05",
       description: "Description of Event 5.",
       imageUrl: Cards, // Replace with actual image URL
-      link: "/event5-details" // Replace with actual link URL
+      link: "/event5-details", // Replace with actual link URL
     },
     {
       title: "Event 6",
       date: "2023-10-20",
       description: "Description of Event 6.",
       imageUrl: Cards, // Replace with actual image URL
-      link: "/event6-details" // Replace with actual link URL
+      link: "/event6-details", // Replace with actual link URL
     },
   ];
 
@@ -291,28 +295,28 @@ const PastEventsContentWrapper: FunctionComponent<PastEventsProps> = ({
       date: "2023-11-15",
       description: "Description of Event 7.",
       imageUrl: Cards, // Replace with actual image URL
-      link: "/event7-details" // Replace with actual link URL
+      link: "/event7-details", // Replace with actual link URL
     },
     {
       title: "Event 8",
       date: "2023-12-10",
       description: "Description of Event 8.",
       imageUrl: Cards, // Replace with actual image URL
-      link: "/event8-details" // Replace with actual link URL
+      link: "/event8-details", // Replace with actual link URL
     },
     {
       title: "Event 9",
       date: "2024-01-25",
       description: "Description of Event 9.",
       imageUrl: Cards, // Replace with actual image URL
-      link: "/event9-details" // Replace with actual link URL
+      link: "/event9-details", // Replace with actual link URL
     },
     {
       title: "Event 10",
       date: "2024-02-20",
       description: "Description of Event 10.",
       imageUrl: Cards, // Replace with actual image URL
-      link: "/event10-details" // Replace with actual link URL
+      link: "/event10-details", // Replace with actual link URL
     },
   ];
 
@@ -337,10 +341,10 @@ const PastEventsContentWrapper: FunctionComponent<PastEventsProps> = ({
         ))}
       </PastEventsContent>
       <ViewGalleryButton onClick={() => setShowTable(!showTable)}>
-                <span className="circle" aria-hidden="true">
-                  <span className="icon arrow"></span>
-                </span>
-                <span className="button-text">View More</span>
+        <span className="circle" aria-hidden="true">
+          <span className="icon arrow"></span>
+        </span>
+        <span className="button-text">View More</span>
       </ViewGalleryButton>
       <EventTable isVisible={showTable}>
         <thead>
@@ -371,4 +375,3 @@ const PastEventsContentWrapper: FunctionComponent<PastEventsProps> = ({
 };
 
 export default PastEventsContentWrapper;
-

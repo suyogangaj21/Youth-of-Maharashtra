@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import styled, { createGlobalStyle } from "styled-components";
-import Header from "@/components/Header[1]";
+import Header from "@/components/Header";
 import Webinars from "@/components/WebinarComponent[1]";
 
 import Web1 from "../assets/images/cards.webp";

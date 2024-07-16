@@ -1,6 +1,6 @@
-import React, { FunctionComponent } from "react";
+import { FunctionComponent } from "react";
 import styled from "styled-components";
-import Cards from "../assets/images/cards.webp"
+import Cards from "../assets/images/cards.webp";
 export type UpcomingEventsProps = {
   className?: string;
 };
@@ -47,7 +47,11 @@ const EventFrame = styled.div<{ bgImage: string }>`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7)
+    );
     border-radius: 30px; /* Match the border-radius of the EventFrame */
     z-index: 0;
   }
@@ -182,7 +186,6 @@ const RegisterButton = styled.button`
   }
 `;
 
-
 interface EventProps {
   title: string;
   date: string;
@@ -198,21 +201,20 @@ const UpcomingEventsContentWrapper: FunctionComponent<UpcomingEventsProps> = ({
       title: "Event 1",
       date: "2024-08-01",
       description: "Description of Event 1.",
-      imageUrl: Cards // Replace with actual image URL
+      imageUrl: Cards, // Replace with actual image URL
     },
     {
       title: "Event 2",
       date: "2024-08-15",
       description: "Description of Event 2.",
-      imageUrl: Cards // Replace with actual image URL
+      imageUrl: Cards, // Replace with actual image URL
     },
     {
       title: "Event 3",
       date: "2024-09-05",
       description: "Description of Event 3.",
-      imageUrl: Cards // Replace with actual image URL
+      imageUrl: Cards, // Replace with actual image URL
     },
-    
   ];
 
   return (
@@ -235,7 +237,6 @@ const UpcomingEventsContentWrapper: FunctionComponent<UpcomingEventsProps> = ({
         ))}
       </UpcomingEventsContent>
     </UpcomingEventsContentWrapperRoot>
-    
   );
 };
 
